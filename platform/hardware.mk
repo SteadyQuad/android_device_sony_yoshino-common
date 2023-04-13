@@ -229,3 +229,7 @@ PRODUCT_PACKAGES += \
 ### XPERIAPARTS
 PRODUCT_PACKAGES += \
     XperiaParts
+
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.yoshino
