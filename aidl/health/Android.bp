@@ -5,11 +5,11 @@
  */
 
 cc_binary {
-    name: "vendor.lineage.health-service.tama",
+    name: "vendor.lineage.health-service.yoshino",
     vendor: true,
     relative_install_path: "hw",
-    init_rc: ["vendor.lineage.health-service.tama.rc"],
-    vintf_fragments: ["vendor.lineage.health-service.tama.xml"],
+    init_rc: ["vendor.lineage.health-service.yoshino.rc"],
+    vintf_fragments: ["vendor.lineage.health-service.yoshino.xml"],
     srcs: [
         "service.cpp",
         "ChargingControl.cpp",

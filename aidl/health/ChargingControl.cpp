@@ -11,7 +11,7 @@
 #include <android/binder_status.h>
 #include <fstream>
 
-#define LOG_TAG "vendor.lineage.health-service.tama"
+#define LOG_TAG "vendor.lineage.health-service.yoshino"
 
 namespace aidl {
 namespace vendor {
