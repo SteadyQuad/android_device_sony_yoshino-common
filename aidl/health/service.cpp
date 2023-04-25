@@ -13,6 +13,7 @@
 using ::aidl::vendor::lineage::health::ChargingControl;
 
 int main() {
+    LOG(ERROR) << "enter chargingcontrol service main()";
     ABinderProcess_setThreadPoolMaxThreadCount(0);
     std::shared_ptr<ChargingControl> lh = ndk::SharedRefBase::make<ChargingControl>();
 
@@ -21,5 +22,6 @@ int main() {
     CHECK_EQ(status, STATUS_OK);
 
     ABinderProcess_joinThreadPool();
+    LOG(ERROR) << "error: chargingcontrol service main() failed";
     return EXIT_FAILURE;  // should not reach
 }
