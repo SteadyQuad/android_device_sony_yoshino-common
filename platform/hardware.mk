@@ -133,6 +133,10 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service
 
+# LINEAGE HEALTH
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
+
 # KEYMASTER
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0 \

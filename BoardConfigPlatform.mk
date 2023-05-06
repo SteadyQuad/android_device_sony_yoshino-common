@@ -104,6 +104,11 @@ TARGET_FS_CONFIG_GEN := \
 ### GRAPHICS
 TARGET_USES_ION := true
 
+### HEALTH
+TARGET_HEALTH_CHARGING_CONTROL_PATH := /sys/class/power_supply/battery/smart_charging_interruption
+TARGET_HEALTH_CHARGING_CONTROL_ENABLE := 0
+TARGET_HEALTH_CHARGING_CONTROL_DISABLE := 1
+
 ### HIDL
 BOARD_VNDK_VERSION := current
 ifneq ($(filter poplar_dsds maple_dsds, $(TARGET_DEVICE)),)
