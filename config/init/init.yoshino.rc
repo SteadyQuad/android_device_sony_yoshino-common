@@ -345,6 +345,9 @@ on early-boot
     restorecon /sys/devices/virtual/input/clearpad/fwinfo
 
 on boot
+    # Enable smart charging
+    write /sys/class/power_supply/battery/smart_charging_activation 1
+
     #Create QMUX deamon socket area
     mkdir /dev/socket/qmux_radio 0770 radio radio
     chmod 2770 /dev/socket/qmux_radio

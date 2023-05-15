@@ -227,3 +227,7 @@ PRODUCT_PACKAGES += \
 ### XPERIAPARTS
 PRODUCT_PACKAGES += \
     XperiaParts
+
+### LINEAGE HEALTH
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
